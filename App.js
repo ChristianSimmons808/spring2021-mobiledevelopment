@@ -1,17 +1,22 @@
-import Chest from './components/Chest'
-import Legs from './components/Legs'
-
-function App() {
+import { StatusBar } from 'expo-status-bar';
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+import Name from './components/Name';
+import Food from './components/Food';
+export default function App() {
   return (
-
-<div>
-<h1> exercise tracker  </h1>
-<Chest/>
-<Legs/>
-
-</div>
-
-);
+    <View style={styles.container}>
+      <Name/>
+      <Food/>
+    </View>
+  );
 }
 
-export default App;
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
