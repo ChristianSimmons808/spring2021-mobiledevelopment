@@ -1,14 +1,19 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Name from './components/Name';
-import Food from './components/Food';
+import {Card, Button} from 'react-native-elements';
+
 export default function App() {
   return (
     <View style={styles.container}>
-      <Name/>
-      <Food/>
-    </View>
+<Card>
+<Card.Title>Christian Simmons</Card.Title>
+<Text>Pizza</Text>
+<Card.Divider/>
+<Text>Steak</Text>
+<Button title="Submit" />
+</Card>
+  </View>
   );
 }
 
